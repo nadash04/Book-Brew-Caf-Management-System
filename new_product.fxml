@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="books.coffee.New_productController">
+    <children>
+        <Pane layoutX="1.0" prefHeight="720.0" prefWidth="945.0" style="-fx-background-color: #FFFBF5; -fx-border-color: #7f5539; -fx-border-width: 1px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="91.0" fitWidth="227.0" layoutX="3.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@الصور/logo2.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="n10" layoutX="769.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleCloseWindow" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #7f5539; -fx-background-radius: 10;" text="× Close" textFill="#fff5e1">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Pane layoutX="53.0" layoutY="86.0" prefHeight="566.0" prefWidth="839.0" style="-fx-background-color: #FFF5E1; -fx-border-color: #6f4518; -fx-border-width: 3px;">
+            <children>
+                <Pane layoutX="-1.0" layoutY="68.0" prefHeight="497.0" prefWidth="839.0">
+                    <children>
+                        <Label layoutX="30.0" layoutY="25.0" prefHeight="20.0" prefWidth="125.0" text="Product name :" textFill="#6f4518">
+                            <font>
+                                <Font name="Constantia" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="77.0" prefHeight="23.0" prefWidth="105.0" text="Category :" textFill="#6f4518">
+                            <font>
+                                <Font name="Constantia" size="17.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="n1" editable="true" layoutX="180.0" layoutY="18.0" prefHeight="35.0" prefWidth="235.0" promptText="enter Product name :" />
+                        <ComboBox fx:id="n2" editable="true" layoutX="180.0" layoutY="75.0" onAction="#handleCategorySelected" prefHeight="35.0" prefWidth="235.0" promptText="Select category" />
+                        <Label layoutX="30.0" layoutY="125.0" prefHeight="20.0" prefWidth="125.0" text="Description :" textFill="#6f4518">
+                            <font>
+                                <Font name="Constantia" size="17.0" />
+                            </font>
+                        </Label>
+                        <TextArea fx:id="n3" layoutX="35.0" layoutY="155.0" prefHeight="74.0" prefWidth="380.0" promptText="Enter The Description :" />
+                        <Label layoutX="30.0" layoutY="251.0" prefHeight="23.0" prefWidth="114.0" text="Product cost :" textFill="#6f4518">
+                            <font>
+                                <Font name="Constantia" size="17.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="n4" layoutX="180.0" layoutY="248.0" prefHeight="35.0" prefWidth="235.0" promptText="Enter Product cost :" />
+                        <Label layoutX="30.0" layoutY="313.0" prefHeight="20.0" prefWidth="114.0" text="Sale price :" textFill="#6f4518">
+                            <font>
+                                <Font name="Constantia" size="17.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="n5" layoutX="180.0" layoutY="304.0" prefHeight="35.0" prefWidth="235.0" promptText="Enter Sale price :" />
+                        <Label layoutX="30.0" layoutY="369.0" prefHeight="20.0" prefWidth="145.0" text="Current quantity :" textFill="#6f4518">
+                            <font>
+                                <Font name="Constantia" size="17.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="n6" layoutX="180.0" layoutY="363.0" prefHeight="35.0" prefWidth="235.0" promptText="Enter Current quantity :" />
+                        <Pane layoutX="487.0" layoutY="64.0" prefHeight="186.0" prefWidth="278.0" style="-fx-border-color: #C0A98D; -fx-border-width: 2; -fx-border-style: dashed; -fx-border-radius: 10;">
+                            <children>
+                                <!-- صورة المعاينة - تأتي أولاً -->
+                                <ImageView fx:id="imagePreview" fitHeight="169.0" fitWidth="235.0" layoutX="22.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+      
+                                <!-- عناصر الرفع - تظهر فقط عندما لا توجد صورة -->
+                                <Label fx:id="uploadLabel" layoutX="75.0" layoutY="133.0" prefHeight="14.0" prefWidth="134.0" text="PNG, JPG, GIF up to 10MB" textFill="#6f4518">
+                                    <font>
+                                        <Font name="Constantia" size="11.0" />
+                                    </font>
+                                </Label>
+                                <Button fx:id="n7" layoutX="90.0" layoutY="93.0" mnemonicParsing="false" onAction="#handleUploadImage" prefHeight="27.0" prefWidth="104.0" style="-fx-background-color: #6f4518; -fx-background-radius: 10;" text="Upload image" textFill="#ffedd8">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                </Button>
+                                <ImageView fx:id="uploadIcon" fitHeight="44.0" fitWidth="49.0" layoutX="117.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@الصور/icons8-upload-50.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                        <ImageView fitHeight="147.0" fitWidth="192.0" layoutX="654.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@الصور/newproducts.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="n8" layoutX="543.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleSaveProduct" prefHeight="38.0" prefWidth="162.0" style="-fx-background-color: #6f4518; -fx-background-radius: 10;" text="Save the product" textFill="#ffedd8">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="123.0" fitWidth="134.0" layoutX="719.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@الصور/login2.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="n9" layoutX="585.0" layoutY="335.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #6f4518; -fx-background-radius: 10;" text="Cancel" textFill="#ffedd8">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+                <Label layoutX="268.0" layoutY="10.0" prefHeight="40.0" prefWidth="307.0" style="-fx-background-color: #FFF5E1; -fx-border-color: #E3AE66; -fx-background-radius: 10; -fx-border-radius: 10;" text="Add a New Product" textFill="#6f4518">
+                    <font>
+                        <Font name="Constantia Bold" size="22.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="5.0" left="50.0" right="5.0" top="5.0" />
+                    </padding>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

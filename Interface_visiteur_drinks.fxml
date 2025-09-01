@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="books.coffee.Interface_visiteur_drinksController">
+   <children>
+      <Pane layoutY="-3.2" prefHeight="733.0" prefWidth="945.0" style="-fx-background-color: #FFFBF5; -fx-border-color: #7f5539; -fx-border-width: 3px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="94.0" fitWidth="200.0" layoutX="364.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@الصور/logo2.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="h13" layoutX="788.0" layoutY="43.0" mnemonicParsing="false" onAction="#handleCloseVisitorPage" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #7f5539; -fx-background-radius: 10;" text="× Close" textFill="#ede0d4">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="253.0" layoutY="68.0" prefHeight="30.0" prefWidth="471.0" text="Hello, Book Lover! Your favorite drinks, snacks " textFill="#7f5539">
+               <font>
+                  <Font name="Comic Sans MS" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="213.0" layoutY="88.0" prefHeight="30.0" prefWidth="510.0" text=" and reads are just a tap away — make yourself at home." textFill="#7f5539">
+               <font>
+                  <Font name="Comic Sans MS" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="149.0" fitWidth="164.0" layoutX="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@الصور/visitor.png" />
+               </image>
+            </ImageView>
+            <HBox layoutX="14.0" layoutY="153.0" prefHeight="51.0" prefWidth="614.0" style="-fx-background-color: #FBECD6; -fx-border-color: #E3AE66; -fx-border-width: 1px; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <children>
+                  <Button fx:id="h1" mnemonicParsing="false" onAction="#handleBooksCategory" prefHeight="36.0" prefWidth="111.0" style="-fx-background-color: #FBECD6;" text=" 📖 Books" textFill="#7f5539">
+                     <font>
+                        <Font name="Constantia Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="h2" mnemonicParsing="false" onAction="#handleDrinksCategory" style="-fx-background-color: #7f5539; -fx-background-radius: 10;" text="☕ Drinks" textFill="#fbecd6">
+                     <font>
+                        <Font name="Constantia Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="h3" mnemonicParsing="false" onAction="#handleSnacksCategory" style="-fx-background-color: #FBECD6;" text="🍪 Snacks" textFill="#7f5539">
+                     <font>
+                        <Font name="Constantia Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="h4" mnemonicParsing="false" onAction="#handleWorkspaceCategory" style="-fx-background-color: #FBECD6;" text="🏢 Workspace" textFill="#7f5539">
+                     <font>
+                        <Font name="Constantia Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="h22" mnemonicParsing="false" onAction="#handleNewCategory" prefHeight="36.0" prefWidth="92.0" style="-fx-background-color: #FBECD6;" text="🌟 New" textFill="#7f5539">
+                     <font>
+                        <Font name="Constantia Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <VBox fx:id="cartVBox" layoutX="636.0" layoutY="154.0" prefHeight="501.0" prefWidth="295.0" style="-fx-background-color: #FBECD6; -fx-border-color: #E3AE66; -fx-border-width: 1px; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <children>
+                  <Label fx:id="h31" text="Shopping cart" textFill="#7f5539">
+                     <font>
+                        <Font name="Constantia Bold" size="19.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="80.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="38.0" prefWidth="292.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="18.0" prefWidth="313.0" />
+                  <ImageView fx:id="h30" fitHeight="149.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@الصور/cart1.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="20.0" top="50.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="cartEmptyLabel" opacity="0.44" text="empty" textFill="#7f5539">
+                     <font>
+                        <Font name="Constantia" size="19.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="110.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="h14" mnemonicParsing="false" onAction="#confirmOrder" prefHeight="36.0" prefWidth="174.0" style="-fx-background-color: #7f5539; -fx-background-radius: 10;" text="Confirm order" textFill="#fbecd6">
+                     <font>
+                        <Font name="Constantia" size="19.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="60.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="h21" mnemonicParsing="false" onAction="#clearCart" prefHeight="36.0" prefWidth="173.0" style="-fx-background-color: #E3AE66; -fx-background-radius: 10;" text="Clear cart" textFill="#7f5539">
+                     <font>
+                        <Font name="Constantia" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="60.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <HBox layoutX="14.0" layoutY="215.0" prefHeight="240.0" prefWidth="614.0" spacing="20.0">
+               <children>
+                  <Pane prefHeight="202.0" prefWidth="138.0" style="-fx-background-color: #FFF5E1; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="154.0" fitWidth="126.0" layoutX="2.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 5, 0.3, 0, 2); -fx-scale-x: 1.02; -fx-scale-y: 1.02;">
+                           <image>
+                              <Image url="@الصور/Cappuccino.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="10.0" layoutY="195.0" text="3$" textFill="#a90303">
+                           <font>
+                              <Font name="Constantia" size="19.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="h5" fitHeight="30.0" fitWidth="30.0" layoutX="50.0" layoutY="207.0" onMouseClicked="#handleAddToCartg5" pickOnBounds="true">
+                           <image>
+                              <Image url="@الصور/plus.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="202.0" prefWidth="138.0" style="-fx-background-color: #FFF5E1; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="160.0" fitWidth="142.0" layoutX="-2.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@الصور/spreso.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="10.0" layoutY="195.0" text="2$" textFill="#a90303">
+                           <font>
+                              <Font name="Constantia" size="19.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="h6" fitHeight="30.0" fitWidth="30.0" layoutX="50.0" layoutY="207.0" onMouseClicked="#handleAddToCartg6" pickOnBounds="true">
+                           <image>
+                              <Image url="@الصور/plus.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="202.0" prefWidth="138.0" style="-fx-background-color: #FFF5E1; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="132.0" fitWidth="126.0" layoutX="6.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@الصور/Macchiat.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="10.0" layoutY="196.0" text="4$" textFill="#a90303">
+                           <font>
+                              <Font name="Constantia" size="19.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="h7" fitHeight="30.0" fitWidth="30.0" layoutX="50.0" layoutY="207.0" onMouseClicked="#handleAddToCartg7" pickOnBounds="true">
+                           <image>
+                              <Image url="@الصور/plus.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="202.0" prefWidth="138.0" style="-fx-background-color: #FFF5E1; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="196.0" fitWidth="142.0" layoutX="-6.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@الصور/coffe.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="10.0" layoutY="195.0" text="3$" textFill="#a90303">
+                           <font>
+                              <Font name="Constantia" size="19.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="h8" fitHeight="30.0" fitWidth="30.0" layoutX="50.0" layoutY="207.0" onMouseClicked="#handleAddToCartg8" pickOnBounds="true">
+                           <image>
+                              <Image url="@الصور/plus.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="14.0" layoutY="460.0" prefHeight="249.0" prefWidth="614.0" spacing="20.0">
+               <children>
+                  <Pane prefHeight="202.0" prefWidth="138.0" style="-fx-background-color: #FFF5E1;">
+                     <children>
+                        <ImageView fitHeight="127.0" fitWidth="137.0" layoutX="-3.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@الصور/tea.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="10.0" layoutY="200.0" text="5$" textFill="#a90303">
+                           <font>
+                              <Font name="Constantia" size="19.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="h9" fitHeight="30.0" fitWidth="30.0" layoutX="50.0" layoutY="215.0" onMouseClicked="#handleAddToCartg9" pickOnBounds="true">
+                           <image>
+                              <Image url="@الصور/plus.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="202.0" prefWidth="138.0" style="-fx-background-color: #FFF5E1;">
+                     <children>
+                        <ImageView fitHeight="170.0" fitWidth="126.0" layoutX="6.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@الصور/Flat%20White.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="10.0" layoutY="200.0" text="3$" textFill="#a90303">
+                           <font>
+                              <Font name="Constantia" size="19.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="h10" fitHeight="30.0" fitWidth="30.0" layoutX="50.0" layoutY="215.0" onMouseClicked="#handleAddToCartg10" pickOnBounds="true">
+                           <image>
+                              <Image url="@الصور/plus.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="202.0" prefWidth="138.0" style="-fx-background-color: #FFF5E1;">
+                     <children>
+                        <ImageView fitHeight="154.0" fitWidth="124.0" layoutX="7.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@الصور/juse%20strobary.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="10.0" layoutY="200.0" text="2$" textFill="#a90303">
+                           <font>
+                              <Font name="Constantia" size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="h11" fitHeight="30.0" fitWidth="30.0" layoutX="50.0" layoutY="215.0" onMouseClicked="#handleAddToCartg11" pickOnBounds="true">
+                           <image>
+                              <Image url="@الصور/plus.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="202.0" prefWidth="138.0" style="-fx-background-color: #FFF5E1; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="170.0" fitWidth="124.0" layoutX="1.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@الصور/juse%20mango.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="10.0" layoutY="200.0" text="4$" textFill="#a90303">
+                           <font>
+                              <Font name="Constantia" size="19.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="h12" fitHeight="30.0" fitWidth="30.0" layoutX="50.0" layoutY="215.0" onMouseClicked="#handleAddToCart12" pickOnBounds="true">
+                           <image>
+                              <Image url="@الصور/plus.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
